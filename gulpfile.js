@@ -22,7 +22,7 @@ gulp.task("styles", () => {
 });
 
 gulp.task("scripts", () => {
-	return gulp.src('./dev/scripts/main.js')
+	return gulp.src('./dev/scripts/script.js')
 		.pipe(babel({
 			presets: ["es2015"]
 		}))
@@ -32,7 +32,7 @@ gulp.task("scripts", () => {
 
 gulp.task("watch", () => {
 	gulp.watch("./dev/styles/**/*.scss", ["styles"]);
-	gulp.watch("./dev/scripts/main.js", ["scripts"]);
+	gulp.watch("./dev/scripts/*.js", ["scripts"]);
 	gulp.watch("*.html", reload);
 });
 

@@ -1,0 +1,29 @@
+@mixin header-style($family, $color, $size){
+	font-family: $family;
+	color:$color;
+	font-size:$size;
+	margin: 0;
+}
+
+@mixin accent-style($family, $color, $style, $weight, $size){
+	font-family: $family;
+	color:$color;
+	font-style:$style;
+	font-weight:$weight;
+	font-size:$size;
+}
+
+// heading styles
+
+h1{
+	
+}
+
+// menu styles
+
+.menu{
+	
+}
+
+// link styles
+
