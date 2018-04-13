@@ -1,9 +1,10 @@
 @import 'partials/setup';
 @import 'partials/variables';
 @import 'partials/typography';
+@import 'partials/hamburgers';
 
 html{
-	font-size: 10px;
+	font-size: 62.5%;
 }
 
 body{
@@ -19,9 +20,10 @@ a{
 	}
 }
 
-ul{
+nav li{
 	padding: 0;
 	margin: 0;
+	list-style: none;
 }
 
 img{
@@ -29,4 +31,36 @@ img{
 	width: 100%;
 	object-fit:cover;
 	object-position:center;
+}
+
+.hidden{
+	display: none;
+}
+
+.menu-exit{
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	overflow: visible;
+}
+
+#exit {
+  background: $accentColor;
+  height: 16px;
+  position: relative;
+  width: 2px;
+  transform:rotate(45deg);
+  transition:.7s;
+}
+#exit:after {
+  background: $accentColor;
+  content: "";
+  height: 2px;
+  left: -7px;
+  position: absolute;
+  top: 7px;
+  width: 16px;
 }

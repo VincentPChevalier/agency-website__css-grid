@@ -8,7 +8,29 @@
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 </head>
 <body>
-	
+	<header class="menu-overlay hidden">
+		<button class="hamburger hamburger--arrowturn-r" type="button"
+		        aria-label="Menu" aria-controls="navigation">
+		  <span class="hamburger-box">
+		    <span class="hamburger-inner"></span>
+		  </span>
+		</button>
+		<label>Menu</label>
+		<nav id="navigation">
+		  <li><a href="#">Home</a></li>
+		  <li><a href="#">Projects</a></li>
+		  <li><a href="#">Blog</a></li>
+		  <li><a href="#">About</a></li>
+		  <li><a href="#">Contact Us</a></li>
+		  <li><button class="menu-exit" type="button" aria-label="Exit Menu" aria-controls="navigation">
+			        <div id="exit"></div>
+		    	</button>
+		    </li> 	
+		</nav>
+		<a href="#" class="contact">Get In Touch</a>
+	</header>
+
+
 	<script src="https://use.fontawesome.com/b631f946e4.js"></script>
 	<script src="/public/scripts/script.js"></script>
 </body>
