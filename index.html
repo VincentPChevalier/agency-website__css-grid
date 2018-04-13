@@ -8,27 +8,48 @@
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 </head>
 <body>
-	<header class="menu-overlay hidden">
-		<button class="hamburger hamburger--arrowturn-r" type="button"
-		        aria-label="Menu" aria-controls="navigation">
-		  <span class="hamburger-box">
-		    <span class="hamburger-inner"></span>
-		  </span>
-		</button>
-		<label>Menu</label>
-		<nav id="navigation">
-		  <li><a href="#">Home</a></li>
-		  <li><a href="#">Projects</a></li>
-		  <li><a href="#">Blog</a></li>
-		  <li><a href="#">About</a></li>
-		  <li><a href="#">Contact Us</a></li>
-		  <li><button class="menu-exit" type="button" aria-label="Exit Menu" aria-controls="navigation">
-			        <div id="exit"></div>
-		    	</button>
-		    </li> 	
-		</nav>
+	<section class="menu-overlay container hidden">
+		<menu class="main-menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li>
+				<button class="menu-exit" type="button" aria-label="Exit Menu" aria-controls="navigation">
+					<div id="exit"></div>
+				</button>
+			</li> 	
+		</menu>
 		<a href="#" class="contact">Get In Touch</a>
-	</header>
+	</section>
+	<section class="splash splash-on container">
+		<nav class="top-nav flex-row">
+			<img src="assets/AgencyLogo.png" alt="Agency Logo" class="logo">
+			<img src="./assets/search.png" alt="Search" class="search"><!-- by Fantastic from the Noun Project -->
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">Blog</a>
+			<label>Menu</label>
+			<button class="hamburger hamburger--arrowturn-r" type="button"
+					aria-label="Menu" aria-controls="navigation">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+		</nav>
+		<section class="splash__title flex-col">
+			<p class="masthead">we are</p>
+			<h1>Digital _Agency</h1>
+		</section>
+		<section class="splash__graphic flex-col">
+			<img src="assets/engineer.png" alt="Engineer Pointing Up">
+		</section>
+	</section>
+	<main class="container">
+
+	</main>
+
 
 
 	<script src="https://use.fontawesome.com/b631f946e4.js"></script>

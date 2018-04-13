@@ -1,0 +1,35 @@
+/*****************
+	VARIABLES
+****************/
+
+$themeC: #666699;
+$accentC:#666;
+$altC: #333;
+$contrastC: #c6dfdf;
+$undertoneC:#fdfdfd;
+
+$sansFont: 'Montserrat', Helvetica, Arial, sans-serif;
+$serifFont: 'Libre Baskerville', Times, serif;
+
+$baseFSize: 62.5%;
+
+/*****************
+	BREAKPOINTS
+****************/
+
+@mixin media-breakpoint-up($point) {
+
+	$md:"(min-width:768px)";
+	$lg:"(min-width:1200px)";
+
+	@if $point == md {
+		@media #{$md} { @content; }
+	}
+
+	@else if $point == lg {
+		@media #{$lg} { @content; }
+	}
+  }
+
+
+

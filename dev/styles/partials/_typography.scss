@@ -13,17 +13,34 @@
 	font-size:$size;
 }
 
+// GENERAL STYLES
+
+html{
+	font-size:$baseFSize;
+}
+
+body{
+	font-family: $serifFont;
+	font-size:1.6rem;
+}
+
 // heading styles
 
 h1{
-	
+	@include header-style($sansFont, $altC, 12rem); 
 }
 
-// menu styles
-
-.menu{
-	
+.masthead{
+	@include accent-style($sansFont, $altC, normal, 700, 6rem)
 }
 
 // link styles
 
+a{
+	color:$altC;
+	text-decoration: none;
+	&:hover{
+		color:$accentC;
+		text-decoration: underline;
+	}
+}
