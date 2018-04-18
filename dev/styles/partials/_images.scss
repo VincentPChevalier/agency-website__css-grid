@@ -5,7 +5,12 @@ img{
 	object-position:center;
 }
 
-.logo, .search{
+.logo, .search, .circle{
 	max-width: 48px;
+}
+
+.circle{
+	border-radius: 50%;
+	background:$contrastC;
 }
 

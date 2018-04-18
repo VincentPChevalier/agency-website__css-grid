@@ -3,122 +3,211 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Digital _Agency : Creative Agency</title>
+	<title>Digital _Agency : Creative _Agency</title>
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i|Montserrat:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 </head>
 <body>
 	<section class="menu-overlay container hidden">
-		<menu class="main-menu">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Projects</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact Us</a></li>
+		<ul class="main-menu__overlay">
+			<li class="main-menu__overlay--active">
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="./projects.html">Projects</a>
+			</li>
+			<li>
+				<a href="#">Blog</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">Contact Us</a>
+			</li>
 			<li>
 				<button class="menu-exit" type="button" aria-label="Exit Menu" aria-controls="navigation">
 					<div id="exit"></div>
 				</button>
 			</li> 	
-		</menu>
+		</ul><!--menu-overlay main menu : home-->
+		<footer class="menu-overlay__footer">
+			<h4>Get in touch?</h4>
+			<a href="#" class="large-link">Brief us</a>
+			<p>16 Place Courbertin, M4A 4A4</p>
+			<p><strong>+1 514.555.8020</strong></p>
+			<a href="#"><strong>info@digitalagency.web</strong></a>
+			<ul class="social-menu">
+				<li class="social-menu__li">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+				</li>
+				<li class="social-menu__li">
+					<a href="#"><i class="fab fa-twitter"></i></a>
+				</li>
+				<li class="social-menu__li">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+				<li class="social-menu__li">
+					<a href="#"><i class="fab fa-google-plus-g"></i></a>
+				</li>
+			</ul><!--overlay-menu: social menu-->
+			<img src="assets/AgencyLogo.png" alt="Agency Logo" class="logo">
+			<p>2017 Rubik Theme</p>
+			<p>Built by Vincent Chevalier 2018</p>
+		</footer>
+	</section><!--menu-overlay hidden container swipe in from the left : home-->
+	<header class="site-header container">
+		<nav class="site-nav global-nav">
+			<img src="./assets/AgencyLogo.png" alt="Agency Logo" class="logo">
+			<ul class="site-nav__level-1">
+				<li class="site-nav__li">
+					<a href="#"><i class="fas fa-search"></i></a><!-- by Font Awesome -->
+				</li>
+				<li class="site-nav__li--active">
+					<a href="./index.html">Home</a>
+				</li>
+				<li class="site-nav__li">
+					<a href="./projects.html">Projects</a>
+				</li>
+				<li class="site-nav__li">
+					<a href="#">Blog</a>
+				</li>
+			</ul>
+		</nav><!--site-navigation bar: global-->
+		<button class="hamburger hamburger--arrowturn-r" type="button"
+				aria-label="Main Menu Button" aria-controls="navigation">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+		<label class="caps">Menu</label>
+	</header><!--site header: home-->
+	<main>
+		<section class="home-hero container">
+			<div class="home-hero__title flex-col">
+				<p class="masthead">we are</p>
+				<h1>Digital _Agency</h1>
+			</div>
+			<div class="home-hero__graphic flex-col">
+				<img src="./assets/engineer.png" alt="Engineer Pointing Up">
+			</div>
+			<p class="emphasized">Since 1995</p>
+			<blockquote>“we focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola, body muscles and holding ones own breath.”</blockquote>
+		</section><!--home-hero section-->
+		<a href="#" class="caps">Contact us</a><!--before arrow-->
+		<section class="home-gallery container">
+			<header class="home-section-header">
+				<h4>Scroll to see</h4><!--vertical key line-->
+				<h2>All work, all play</h2><!--vertical key line-->
+			</header>
+			<picture>
+				<img src="./assets/digital-agency_zerus.jpg" alt="black Lego angel on pedestal">
+			</picture>
+			<h3><a href="#">Zerus</a></h3>
+			<p class="subtitle">Branding, Graphic Design, UI/UX</p>
+			<picture>
+				<img src="./assets/digital-agency_multipulls.jpg" alt="artistic lego creation with a picture of Superman and the word art">
+			</picture>
+			<h3><a href="#">Multipulls</a></h3>
+			<p class="subtitle">Web Design, UI/UX, Marketing</p>
+			<picture>
+				<img src="./assets/digital-agency_printwork.jpg" alt="two copies of a book on lego design. one is opened">
+			</picture>
+			<h3><a href="#">Plastic Pixel</a></h3>
+			<p class="subtitle">Branding, Graphic Design, Web Design, Marketing</p>
+			<picture>
+				<img src="./assets/digital-agency_anonyn.jpg" alt="a room full of chairs arranged and photographed on an angle - small books are placed on some seats">
+			</picture>
+			<h3><a href="#">Anonym</a></h3>
+			<p class="subtitle">Concept Development, Graphic Design, Marketing</p>
+			<picture>
+				<img src="./assets/digital-agency_chestr.jpg" alt="a lego chest full of body parts">
+			</picture>
+			<h3><a href="#">Chestr</a></h3>
+			<p class="subtitle">Branding, Web Design, UI/UX, Marketing</p>
+			<picture>
+				<img src="./assets/digital-agency_glowr.jpg" alt="a glowing cluster of fluorescent material">
+			</picture>
+			<h3><a href="#">Glow Rite Night</a></h3>
+			<p class="subtitle">Branding, Marketing, Event Planning</p>
+			<a href="#" class="project-button">More Projects</a><!--box button-->
+		</section>
+		<section class="home-blog-index">
+			<header class="home-section-header">
+				<h4>Click to see</h4><!--vertical key line-->
+				<h2>All words, all day</h2><!--vertical key line-->
+			</header>
+			<ul class="home-blog-index__list">
+				<li>
+					<p class="date-stamp"></p>
+					<a href="" class="home-blog-index__list--title">
+						<h3>Leverage agile frameworks to provide a robust synopsis</h3>
+						<p>Read more</p>
+					</a>
+				</li>
+				<li>
+					<p class="date-stamp"></p>
+					<a href="" class="home-blog-index__list--title">
+						<h3>Iterative approaches to corporate strategy</h3>
+						<p>Read more</p>
+					</a>
+				</li>
+				<li>
+					<p class="date-stamp"></p>
+					<a href="" class="home-blog-index__list--title">
+						<h3>Foster collaborative thinking to further overall value</h3>
+						<p>Read more</p>
+					</a>
+				</li>
+				<li>
+					<p class="date-stamp"></p>
+					<a href="" class="home-blog-index__list--title">
+						<h3>Organically grow a holistic world view</h3>
+						<p>Read more</p>
+					</a>
+				</li>
+				<li>
+					<p class="date-stamp"></p>
+					<a href="" class="home-blog-index__list--title">
+						<h3>Disruptive innovation via workplace diversity and empowerment</h3>
+						<p>Read more</p>
+					</a>
+				</li>
+				<li>
+					<p class="date-stamp"></p>
+					<a href="" class="home-blog-index__list--title">
+						<h3>Win-win survival strategies to ensure proactive submission</h3>
+						<p>Read more</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer class="site-footer__global container">
 		<h4>Get in touch?</h4>
 		<a href="#" class="large-link">Brief us</a>
 		<p>16 Place Courbertin, M4A 4A4</p>
 		<p><strong>+1 514.555.8020</strong></p>
 		<a href="#"><strong>info@digitalagency.web</strong></a>
-		<menu class="social-menu">
-			<li>
+		<ul class="social-menu">
+			<li class="social-menu__li">
 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+			</li>
+			<li class="social-menu__li">
 				<a href="#"><i class="fab fa-twitter"></i></a>
+			</li>
+			<li class="social-menu__li">
 				<a href="#"><i class="fab fa-instagram"></i></a>
+			</li>
+			<li class="social-menu__li">
 				<a href="#"><i class="fab fa-google-plus-g"></i></a>
 			</li>
-		</menu>
+		</ul>
 		<img src="assets/AgencyLogo.png" alt="Agency Logo" class="logo">
 		<p>2017 Rubik Theme</p>
 		<p>Built by Vincent Chevalier 2018</p>
-	</section>
-	<section class="splash-overlay splash-on container">
-		<nav class="top-nav flex-row">
-			<img src="./assets/AgencyLogo.png" alt="Agency Logo" class="logo">
-			<a href="#"><i class="fas fa-search"></i></a><!-- by Font Awesome -->
-			<a href="#">Home</a>
-			<a href="#">Projects</a>
-			<a href="#">Blog</a>
-			<label class="caps">Menu</label>
-			<button class="hamburger hamburger--arrowturn-r" type="button"
-					aria-label="Menu" aria-controls="navigation">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</button>
-		</nav>
-		<section class="splash__title flex-col">
-			<p class="masthead">we are</p>
-			<h1>Digital _Agency</h1>
-		</section>
-		<section class="splash__graphic flex-col">
-			<img src="./assets/engineer.png" alt="Engineer Pointing Up">
-		</section>
-	</section>
-	<main class="container">
-		<nav class="top-nav flex-row">
-			<img src="./assets/AgencyLogo.png" alt="Agency Logo" class="logo">
-			<a href="#"><i class="fas fa-search"></i></a><!-- by Font Awesome -->
-			<a href="#">Home</a>
-			<a href="#">Projects</a>
-			<a href="#">Blog</a>
-			<label>Menu</label>
-			<button class="hamburger hamburger--arrowturn-r" type="button"
-					aria-label="Menu" aria-controls="navigation">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</button>
-		</nav>
-		<p class="masthead">we are</p>
-		<h1>Digital _Agency</h1>
-		<p class="date-style">Since 1995</p>
-		<blockquote>“we focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola, body muscles and holding ones own breath.”</blockquote>
-		<a href="#" class="caps">Contact us</a><!--before arrow-->
-		<h4>Scroll to see</h4><!--vertical key line-->
-		<h2>All work, all play</h2><!--vertical key line-->
-		<picture>
-			<img src="./assets/digital-agency_zerus.jpg" alt="black Lego angel on pedestal">
-		</picture>
-		<h3><a href="#">Zerus</a></h3>
-		<p class="subtitle">Branding, Graphic Design, UI/UX</p>
-		<picture>
-			<img src="./assets/digital-agency_multipulls.jpg" alt="artistic lego creation with a picture of Superman and the word art">
-		</picture>
-		<h3><a href="#">Multipulls</a></h3>
-		<p class="subtitle">Web Design, UI/UX, Marketing</p>
-		<picture>
-			<img src="./assets/digital-agency_printwork.jpg" alt="two copies of a book on lego design. one is opened">
-		</picture>
-		<h3><a href="#">Plastic Pixel</a></h3>
-		<p class="subtitle">Branding, Graphic Design, Web Design, Marketing</p>
-		<picture>
-			<img src="./assets/digital-agency_anonyn.jpg" alt="a room full of chairs arranged and photographed on an angle - small books are placed on some seats">
-		</picture>
-		<h3><a href="#">Anonym</a></h3>
-		<p class="subtitle">Concept Development, Graphic Design, Marketing</p>
-		<picture>
-			<img src="./assets/digital-agency_chestr.jpg" alt="a lego chest full of body parts">
-		</picture>
-		<h3><a href="#">Chestr</a></h3>
-		<p class="subtitle">Branding, Web Design, UI/UX, Marketing</p>
-		<picture>
-			<img src="./assets/digital-agency_glowr.jpg" alt="a glowing cluster of fluorescent material">
-		</picture>
-		<h3><a href="#">Glow Rite Night</a></h3>
-		<p class="subtitle">Branding, Marketing, Event Planning</p>
-	</main>
-
-
-
-
+	</footer><!--site-footer : global-->
 	<script src="/public/scripts/script.js"></script>
 </body>
 </html>
