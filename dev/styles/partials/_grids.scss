@@ -2,54 +2,55 @@
 	GRIDS
 ****************/
 
-@mixin display-grid {
+@mixin display-grid($gap, $gtc, $gtr) {
 	display: grid;
-	grid-template-rows: auto;
-	grid-gap: 1.5em;
+	grid-gap: $gap;
+	grid-template-columns:$gtc;
+	grid-template-rows: $gtr;
 }
 
-.container {
-	@include display-grid;
-	grid-template-columns: repeat(2, 1fr);
-}
+// .container {
+// 	@include display-grid;
+// 	grid-template-columns: repeat(2, 1fr);
+// }
 
-.container {
-	@include media-breakpoint-up(md) {
-		@include display-grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-	@include media-breakpoint-up(lg) {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
+// .container {
+// 	@include media-breakpoint-up(md) {
+// 		@include display-grid;
+// 		grid-template-columns: repeat(2, 1fr);
+// 	}
+// 	@include media-breakpoint-up(lg) {
+// 		grid-template-columns: repeat(4, 1fr);
+// 	}
+// }
 
-%grid-helpers-base {
-	@include media-breakpoint-up(md) {
-		@include display-grid;
-		grid-template-columns: 1fr;
-	}
-}
-.cols-2 {
-	@extend %grid-helpers-base;
-	@include media-breakpoint-up(md) {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-.cols-3 {
-	@extend %grid-helpers-base;
-	@include media-breakpoint-up(md) {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-.cols-4 {
-	@extend %grid-helpers-base;
-	@include media-breakpoint-up(md) {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-.cols-auto-fit {
-	@extend %grid-helpers-base;
-	@include media-breakpoint-up(md) {
-		grid-template-columns: repeat(auto-fit, minmax(15.625em, 1fr));
-	}
-}
+// %grid-helpers-base {
+// 	@include media-breakpoint-up(md) {
+// 		@include display-grid;
+// 		grid-template-columns: 1fr;
+// 	}
+// }
+// .cols-2 {
+// 	@extend %grid-helpers-base;
+// 	@include media-breakpoint-up(md) {
+// 		grid-template-columns: repeat(2, 1fr);
+// 	}
+// }
+// .cols-3 {
+// 	@extend %grid-helpers-base;
+// 	@include media-breakpoint-up(md) {
+// 		grid-template-columns: repeat(3, 1fr);
+// 	}
+// }
+// .cols-4 {
+// 	@extend %grid-helpers-base;
+// 	@include media-breakpoint-up(md) {
+// 		grid-template-columns: repeat(4, 1fr);
+// 	}
+// }
+// .cols-auto-fit {
+// 	@extend %grid-helpers-base;
+// 	@include media-breakpoint-up(md) {
+// 		grid-template-columns: repeat(auto-fit, minmax(15.625em, 1fr));
+// 	}
+// }

@@ -1,0 +1,43 @@
+body.noscroll{
+	overflow: hidden;
+}
+
+.menu-overlay{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100vh;
+	background:$altwhite;
+	.menu-main__overlay{
+		@include display-grid(0, 1fr minmax(100px, 400px) minmax(250px, 1fr) 1fr, 1fr);
+		height: 100%;
+		.menu-main__overlay--col{
+			display: grid;
+			grid-template-rows:  minmax(200px, 500px) 1fr;
+			padding:0 40px 0 80px;
+		}
+		.menu-main__overlay--col:nth-child(3){
+			padding:0 40px 0 40px;
+		}
+		.menu-main__overlay--col.color{
+			background:$paleblue;
+		}
+		.menu-main__overlay--col:last-of-type, .menu-main__overlay--col:first-of-type{
+			text-align: right;
+		}
+	}
+}
+
+.f-menu-main, .social-menu{
+	grid-row: 2 / -1;
+	align-self:center;
+}
+
+.logo{
+	height: 50px;
+	width:50px;
+}

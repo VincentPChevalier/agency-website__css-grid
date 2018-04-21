@@ -9,58 +9,71 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 </head>
 <body>
-	<section class="menu-overlay container hidden">
-		<ul class="main-menu__overlay">
-			<li class="main-menu__overlay--active">
-				<a href="#">Home</a>
-			</li>
-			<li>
-				<a href="./projects.html">Projects</a>
-			</li>
-			<li>
-				<a href="#">Blog</a>
-			</li>
-			<li>
-				<a href="#">About</a>
-			</li>
-			<li>
-				<a href="#">Contact Us</a>
-			</li>
-			<li>
-				<button class="menu-exit" type="button" aria-label="Exit Menu" aria-controls="navigation">
-					<div id="exit"></div>
-				</button>
-			</li> 	
-		</ul><!--menu-overlay main menu : home-->
-		<footer class="menu-overlay__footer">
-			<h4>Get in touch?</h4>
-			<a href="#" class="large-link">Brief us</a>
-			<p>16 Place Courbertin, M4A 4A4</p>
-			<p><strong>+1 514.555.8020</strong></p>
-			<a href="#"><strong>info@digitalagency.web</strong></a>
-			<ul class="social-menu">
-				<li class="social-menu__li">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-				</li>
-				<li class="social-menu__li">
-					<a href="#"><i class="fab fa-twitter"></i></a>
-				</li>
-				<li class="social-menu__li">
-					<a href="#"><i class="fab fa-instagram"></i></a>
-				</li>
-				<li class="social-menu__li">
-					<a href="#"><i class="fab fa-google-plus-g"></i></a>
-				</li>
-			</ul><!--overlay-menu: social menu-->
-			<img src="assets/AgencyLogo.png" alt="Agency Logo" class="logo">
-			<p>2017 Rubik Theme</p>
-			<p>Built by Vincent Chevalier 2018</p>
-		</footer>
+	<section class="menu-overlay hidden">
+		<section class="menu-main__overlay">
+			<section class="menu-main__overlay--col color col1">
+				<div class="f-menu-main">
+					<h4>Get in touch?</h4>
+					<a href="#" class="large-link">Brief us</a>
+				</div>
+			</section>
+			<section class="menu-main__overlay--col col2">
+				<ul class="menu-main__nav">
+					<li class="menu-main__nav--active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="./projects.html">Projects</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Contact Us</a>
+					</li>
+					<li>
+						<button class="menu-exit" type="button" aria-label="Exit Menu" aria-controls="navigation">
+							<div id="exit"></div>
+						</button>
+					</li>
+				</ul>
+				<div class="f-menu-main">
+					<p>16 Place Courbertin, M4A 4A4</p>
+					<p>+1 514.555.8020</p>
+					<a href="#">info@digitalagency.web</a>
+				</div>
+			</section>
+			<section class="menu-main__overlay--col col3">
+				<ul class="social-menu">
+					<li class="social-menu__li">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="social-menu__li">
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="social-menu__li">
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="social-menu__li">
+						<a href="#"><i class="fab fa-google-plus-g"></i></a>
+					</li>
+				</ul><!--overlay-menu: social menu-->
+			</section> 	
+			<section class="menu-main__overlay--col col4">
+				<div class="f-menu-main">
+					<img src="assets/AgencyLogo.png" alt="Agency Logo" class="logo">
+					<p class="">2017 Rubik Theme</p>
+				</div>
+			</section>
+		</section><!--menu-overlay main menu : home-->
 	</section><!--menu-overlay hidden container swipe in from the left : home-->
-	<header class="site-header container">
-		<nav class="site-nav global-nav">
+	<header class="site-header">
+		<nav class="global-nav">
 			<img src="./assets/AgencyLogo.png" alt="Agency Logo" class="logo">
-			<ul class="site-nav__level-1">
+			<ul class="site-menu">
 				<li class="site-nav__li">
 					<a href="#"><i class="fas fa-search"></i></a><!-- by Font Awesome -->
 				</li>
@@ -75,28 +88,30 @@
 				</li>
 			</ul>
 		</nav><!--site-navigation bar: global-->
-		<button class="hamburger hamburger--arrowturn-r" type="button"
-				aria-label="Main Menu Button" aria-controls="navigation">
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-		</button>
-		<label class="caps">Menu</label>
+		<nav class="mobile-nav">
+			<button class="hamburger hamburger--arrowalt" type="button"
+					aria-label="Main Menu Button" aria-controls="navigation">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<label class="caps">Menu</label>
+		</nav>
 	</header><!--site header: home-->
 	<main>
-		<section class="home-hero container">
-			<div class="home-hero__title flex-col">
+		<section class="home-hero">
+			<div class="home-hero__title">
 				<p class="masthead">we are</p>
 				<h1>Digital _Agency</h1>
 			</div>
-			<div class="home-hero__graphic flex-col">
-				<img src="./assets/engineer.png" alt="Engineer Pointing Up">
+			<div class="home-hero__graphic">
+				<img src="./assets/engineer.png" alt="Engineer Pointing Up" class="feature-image">
 			</div>
 			<p class="emphasized">Since 1995</p>
 			<blockquote>“we focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola, body muscles and holding ones own breath.”</blockquote>
 		</section><!--home-hero section-->
 		<a href="#" class="caps">Contact us</a><!--before arrow-->
-		<section class="home-gallery container">
+		<section class="home-gallery container col-2">
 			<header class="home-section-header">
 				<h4>Scroll to see</h4><!--vertical key line-->
 				<h2>All work, all play</h2><!--vertical key line-->

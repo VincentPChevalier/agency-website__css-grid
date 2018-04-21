@@ -2,11 +2,13 @@
 	VARIABLES
 ****************/
 
-$themeC: #666699;
-$accentC:#666;
-$altC: #333;
-$contrastC: #c6dfdf;
-$undertoneC:#fdfdfd;
+$darkblue: #666699;
+$paleblue: #c6dfdf;
+$medium:#666;
+$dark: #333;
+$altwhite:#fdfdfd;
+$offwhite:#FFFAFA;
+$warm:#FF7F50;
 
 $sansFont: 'Montserrat', Helvetica, Arial, sans-serif;
 $serifFont: 'Libre Baskerville', Times, serif;
@@ -17,17 +19,38 @@ $baseFSize: 62.5%;
 	BREAKPOINTS
 ****************/
 
-@mixin media-breakpoint-up($point) {
+// Breakpoints for media queries.
+$large-desktop: "max-width:1680px";
+$desktop: "max-width:1366px";
+$tablet-landscape: "max-width:1024px";
+$tablet-portrait: "max-width:768px";
+$mobile-landscape: "max-width:640px";
+$mobile-portrait: "max-width:360px";
 
-	$md:"(min-width:768px)";
-	$lg:"(min-width:1200px)";
+@mixin media($point) {
 
-	@if $point == md {
-		@media #{$md} { @content; }
+	@if $point == mobile-portrait {
+		@media ($mobile-portrait) { @content; }
 	}
 
-	@else if $point == lg {
-		@media #{$lg} { @content; }
+	@if $point == mobile-landscape {
+		@media ($mobile-landscape) { @content; }
+	}
+
+	@else if $point == tablet-portrait {
+		@media ($tablet-portrait) { @content; }
+	}
+
+	@else if $point == tablet-landscape {
+		@media ($tablet-landscape) { @content; }
+	}
+
+	@else if $point == desktop {
+		@media ($desktop) { @content; }
+	}
+
+	@else if $point == $large-desktop {
+		@media ($large-desktop) { @content; }
 	}
   }
 

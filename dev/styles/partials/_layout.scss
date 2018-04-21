@@ -1,23 +1,2 @@
-nav li{
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
 
-.flex-row{
-	display: flex;
-	justify-content:space-between;
-}
 
-.top-nav{
-	grid-column: 1 / -1;
-	justify-items:stretch;
-}
-
-.home-hero__title{
-	background:#fff;
-}
-
-.home-hero__graphic{
-	background: $contrastC;
-}

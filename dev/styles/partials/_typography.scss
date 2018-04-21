@@ -24,23 +24,84 @@ body{
 	font-size:1.6rem;
 }
 
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+
 // heading styles
 
 h1{
-	@include header-style($sansFont, $altC, 12rem); 
+	@include header-style($sansFont, $dark, 12rem); 
+	}
+
+h4{
+	@include header-style($serifFont, $dark, 2rem);
+	font-style:oblique;
+	font-weight: 400;
+	padding-bottom: 10px;
 }
 
+
 .masthead{
-	@include accent-style($sansFont, $altC, normal, 700, 6rem)
+	@include accent-style($sansFont, $dark, normal, 700, 6rem);
+}
+
+p{
+	@include accent-style($sansFont, $dark, normal, 400, 1.6rem);
+	padding-bottom: 10px;
 }
 
 // link styles
 
 a{
-	color:$altC;
+	color:$dark;
 	text-decoration: none;
 	&:hover{
-		color:$accentC;
-		text-decoration: underline;
+		color:$darkblue;
+	}
+	&:active{
+		color:$warm;
 	}
 }
+
+.menu-main__nav li a{
+	position: relative;
+	color:$dark;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover{
+		color:$darkblue;
+		&::before{
+			position: absolute;
+			content:'';
+			background: $paleblue;
+			width: 100px;
+			height: 8px;
+			top:6px;
+			z-index:-10;
+			opacity:.75;
+		}
+	}
+	&:active{
+		color:$warm;
+	}
+}
+
+
+
+.social-menu a{
+	color:$dark;
+	&:hover{
+		color:$darkblue;
+		&::before{
+			background: transparent;
+		}
+}}
+
+.large-link{
+	font-size: 3rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+

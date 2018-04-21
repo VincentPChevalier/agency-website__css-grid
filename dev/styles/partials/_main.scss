@@ -1,0 +1,54 @@
+header.site-header{
+	display: flex;
+	justify-content:space-between;
+	align-items:center;	
+	padding:40px;
+}
+
+.global-nav{
+	display: flex;
+	justify-content:space-between;
+	flex-basis:50%;
+	align-items:center;
+	background: #fff;
+	.site-menu {
+		@include menu-base;
+		display: flex;
+		justify-content:space-around;
+		flex-basis:90%;
+	}
+}
+.mobile-nav{
+	display: flex;
+	flex-direction:column;
+	text-align:center;
+}
+
+.home-hero{
+	@include display-grid(0, 1fr 1fr, auto);
+	.home-hero__title{
+		position: relative;
+		padding: 20px;
+		text-align: center;
+		h1{
+			position: absolute;
+			right:-300px;
+		}
+	}
+}
+
+.home-hero__graphic{
+	
+
+}
+
+.feature-image{
+	position: relative;
+	top: 0;
+	left: 20px;
+	width: 400px;
+	z-index: -1;
+	border-radius: 50%;
+	background:$paleblue;
+}
+
