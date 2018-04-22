@@ -24,7 +24,7 @@ body{
 	font-size:1.6rem;
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p,blockquote{
 	margin: 0;
 	padding: 0;
 }
@@ -52,6 +52,10 @@ p{
 	padding-bottom: 10px;
 }
 
+.emphasized{
+	@include accent-style($serifFont, $dark, oblique, 400, 1.6rem);
+}
+
 // link styles
 
 a{
@@ -71,7 +75,7 @@ a{
 	text-decoration: none;
 	text-transform: uppercase;
 	&:hover{
-		color:$darkblue;
+		color:$dark;
 		&::before{
 			position: absolute;
 			content:'';
@@ -83,12 +87,7 @@ a{
 			opacity:.75;
 		}
 	}
-	&:active{
-		color:$warm;
-	}
 }
-
-
 
 .social-menu a{
 	color:$dark;
@@ -103,5 +102,11 @@ a{
 	font-size: 3rem;
 	font-weight: 500;
 	text-transform: uppercase;
+}
+
+.caps{
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	display: inline-block;
 }
 

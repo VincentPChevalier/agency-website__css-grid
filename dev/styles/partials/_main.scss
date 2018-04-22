@@ -25,21 +25,39 @@ header.site-header{
 }
 
 .home-hero{
-	@include display-grid(0, 1fr 1fr, auto);
+	@include display-grid(0, 100px repeat(2, 1fr) 100px, 2fr 1fr);
 	.home-hero__title{
 		position: relative;
 		padding: 20px;
 		text-align: center;
+		grid-column:2 / 3;
 		h1{
 			position: absolute;
 			right:-300px;
 		}
 	}
-}
-
-.home-hero__graphic{
-	
-
+	.home-hero__graphic{
+		grid-column:3 / 4;
+	}
+	.home-hero__quote{
+		position: relative;
+		grid-column:1 / -1;
+		grid-row:2 / 3;
+		padding:80px 100px 0 200px;
+		text-align: right;
+		p{
+			padding-left: 40px;
+			padding-bottom: 20px;
+			text-align: left;
+		}
+		blockquote{
+			text-align: left;
+		}
+		a.caps{
+			padding-top: 10px;
+			padding-right: 100px;
+		}
+	}
 }
 
 .feature-image{
@@ -47,8 +65,29 @@ header.site-header{
 	top: 0;
 	left: 20px;
 	width: 400px;
+	height: 400px;
 	z-index: -1;
 	border-radius: 50%;
 	background:$paleblue;
 }
+
+.home-gallery{
+	@include display-grid(0, 1fr 2fr 1fr, auto);
+	.container{
+		@include display-grid(1rem, repeat(2, minmax(400px, 600px)), repeat(12, 100px));
+		grid-column:2/3;
+		.home-gallery__header{
+			grid-column: 3 / 4;
+			grid-row: 1 / 2;
+			padding: 150px 0 80px 0;
+		}
+	}
+}
+
+.project-one{
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+
+}
+
 
